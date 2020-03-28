@@ -70,9 +70,9 @@ public class Main {
     public static void main(String[] args) {
 
         //Makes two arrays of random lengths between zero and 100:
-        double rand1 = Math.random() * 10;
+        double rand1 = Math.random() * 100;
         int size1 = (int)rand1;
-        double rand2 = Math.random() * 10;
+        double rand2 = Math.random() * 100;
         int size2 = (int)rand2;
 
         int[] nums1 = new int[size1];
