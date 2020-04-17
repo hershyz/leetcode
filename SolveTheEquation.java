@@ -6,151 +6,196 @@
 public class Main {
 
     public static void main(String[] args) {
-        String input = "x=x+2";
-        run(input);
+        run("x+5-3+x=6+x-2");
+        run("x=x");
+        run("2x=x");
+        run("2x+3x-6x=x+2");
+        run("x=x+2");
     }
 
     public static void run(String input) {
 
-        String rawLeft = input.split("=")[0];
-        String rawRight = input.split("=")[1];
-
-        //Returns infinity if left and right sides of the equation are equal:
-        if (rawLeft.equals(rawRight)) {
+        String[] infiniteTest = input.split("=");
+        if (infiniteTest[0].equals(infiniteTest[1])) {
             System.out.println("infinite solutions");
             return;
         }
 
-        //Simplifies the left and right sides by combining constants and coefficients, equation only contains + and - operations:
-        double lcoefficient = 0;
-        double lconstant = 0;
-        double rcoefficient = 0;
-        double rconstant = 0;
+        String[] isplit = input.split("");
+        String fixedInput = "";
 
-        String[] lArr = rawLeft.split("");
-        String[] rArr = rawRight.split("");
-
-        //Simplifies left constants:
         int a;
-        for (a = 0; a <= lArr.length - 2; a++) {
+        for (a = 0; a < isplit.length; a++) {
 
-            if (!lArr[a].equals("-") && !lArr[a].equals("+") && !lArr[a].equals("x") && a == 0) {
-                lconstant = lconstant + Double.valueOf(lArr[a]);
+            fixedInput = fixedInput + isplit[a];
+
+            if (isplit[a].equals("-") || isplit[a].equals("+") || isplit[a].equals("x") || isplit[a].equals("=")) {
+                fixedInput = fixedInput + " ";
             }
 
-            if (lArr[a].equals("-") && !lArr[a + 1].equals("x") && !lArr[a + 2].equals("x")) {
-                lconstant = lconstant - Double.valueOf(lArr[a + 1]);
-            }
-
-            if (lArr[a].equals("+") && !lArr[a + 1].equals("x") && !lArr[a + 2].equals("x")) {
-                lconstant = lconstant + Double.valueOf(lArr[a + 1]);
+            if (isInt(isplit[a])) {
+                if (a < isplit.length - 1) {
+                    if (!isplit[a + 1].equals("x")) {
+                        fixedInput = fixedInput + " ";
+                    }
+                }
             }
         }
 
-        //Simplifies left coefficients:
+        String left = fixedInput.split(" = ")[0];
+        String right = fixedInput.split(" = ")[1];
+
+        String[] l = left.split(" ");
+        String[] r = right.split(" ");
+        int lcoefficient = 0;
+        int lconstant = 0;
+        int rcoefficient = 0;
+        int rconstant = 0;
+
+        //Simplifies left:
         int b;
-        for (b = 0; b < lArr.length - 1; b++) {
+        for (b = 0; b < l.length; b++) {
 
-            if (lArr[b].equals("x") && b == 0) {
-                lcoefficient++;
-            }
+            String current = l[b];
 
-            if (lArr[b].equals("x") && b == 1) {
-                lcoefficient = lcoefficient + Double.valueOf(lArr[b - 1]);
-            }
+            if (b == 0) {
 
-            if (lArr[b].equals("-")) {
-                boolean solved = false;
-                if (lArr[b + 1].equals("x")) {
-                    lcoefficient--;
-                    solved = true;
+                if (isInt(current)) {
+                    lconstant = lconstant + Integer.valueOf(current);
                 }
-                if (!solved && b < lArr.length - 2) {
-                    if (lArr[b + 2].equals("x")) {
-                        lcoefficient = lcoefficient - Double.valueOf(lArr[b + 1]);
+
+                if (!isInt(current)) {
+
+                    if (current.length() == 1) {
+                        lcoefficient++;
+                    }
+                    else {
+                        int coefficient = Integer.valueOf(current.split("")[0]);
+                        lcoefficient = lcoefficient + coefficient;
                     }
                 }
             }
 
-            if (lArr[b].equals("+")) {
-                boolean solved = false;
-                if (lArr[b + 1].equals("x")) {
-                    lcoefficient++;
-                    solved = true;
+            if (current.equals("+")) {
+
+                if (isInt(l[b + 1])) {
+                    lconstant = lconstant + Integer.valueOf(l[b + 1]);
                 }
-                if (!solved) {
-                    if (lArr[b + 2].equals("x")) {
-                        lcoefficient = lcoefficient + Double.valueOf(lArr[b + 1]);
+
+                if (!isInt(l[b + 1])) {
+
+                    if (l[b + 1].length() == 1) {
+                        lcoefficient++;
+                    }
+                    else {
+                        int coefficient = Integer.valueOf(l[b + 1].split("")[0]);
+                        lcoefficient = lcoefficient + coefficient;
+                    }
+                }
+            }
+
+            if (current.equals("-")) {
+
+                if (isInt(l[b + 1])) {
+                    lconstant = lconstant - Integer.valueOf(l[b + 1]);
+                }
+
+                if (!isInt(l[b + 1])) {
+
+                    if (l[b + 1].length() == 1) {
+                        lcoefficient--;
+                    }
+                    else {
+                        int coefficient = Integer.valueOf(l[b + 1].split("")[0]);
+                        lcoefficient = lcoefficient - coefficient;
                     }
                 }
             }
         }
 
-        System.out.println(lconstant + ", " + lcoefficient);
-
-        //Simplifies right constants:
+        //Simplifies right:
         int c;
-        for (c = 0; c <= rArr.length - 2; c++) {
+        for (c = 0; c < r.length; c++) {
 
-            if (!rArr[c].equals("-") && !rArr[c].equals("+") && !rArr[c].equals("x") && c == 0) {
-                rconstant = rconstant + Double.valueOf(rArr[c]);
-            }
+            String current = r[c];
 
-            if (rArr[c].equals("-") && !rArr[c + 1].equals("x") && !lArr[c + 2].equals("x")) {
-                rconstant = rconstant - Double.valueOf(rArr[c + 1]);
-            }
+            if (c == 0) {
 
-            if (rArr[c].equals("+") && !rArr[c + 1].equals("x") && !lArr[c + 2].equals("x")) {
-                rconstant = rconstant + Double.valueOf(rArr[c + 1]);
-            }
-        }
-
-        //Simplifies right coefficients:
-        int d;
-        for (d = 0; d < rArr.length - 1; d++) {
-
-            if (rArr[d].equals("x") && d == 0) {
-                rcoefficient++;
-            }
-
-            if (rArr[d].equals("x") && d == 1) {
-                rcoefficient = rcoefficient + Double.valueOf(rArr[d - 1]);
-            }
-
-            if (rArr[d].equals("-")) {
-                boolean solved = false;
-                if (rArr[d + 1].equals("x")) {
-                    rcoefficient--;
-                    solved = true;
+                if (isInt(current)) {
+                    rconstant = rconstant + Integer.valueOf(current);
                 }
-                if (!solved && d < rArr.length - 2) {
-                    if (rArr[d + 2].equals("x")) {
-                        rcoefficient = rcoefficient - Double.valueOf(rArr[d + 1]);
+
+                if (!isInt(current)) {
+
+                    if (current.length() == 1) {
+                        rcoefficient++;
+                    }
+                    else {
+                        int coefficient = Integer.valueOf(current.split("")[0]);
+                        rcoefficient = rcoefficient + coefficient;
                     }
                 }
             }
 
-            if (rArr[d].equals("+")) {
-                boolean solved = false;
-                if (rArr[d + 1].equals("x")) {
-                    rcoefficient++;
-                    solved = true;
+            if (current.equals("+")) {
+
+                if (isInt(r[c + 1])) {
+                    rconstant = rconstant + Integer.valueOf(r[c + 1]);
                 }
-                if (!solved) {
-                    if (rArr[d + 2].equals("x")) {
-                        rcoefficient = rcoefficient + Double.valueOf(rArr[d + 1]);
+
+                if (!isInt(r[c + 1])) {
+
+                    if (r[c + 1].length() == 1) {
+                        rcoefficient++;
+                    }
+                    else {
+                        int coefficient = Integer.valueOf(r[c + 1].split("")[0]);
+                        rcoefficient = rcoefficient + coefficient;
+                    }
+                }
+            }
+
+            if (current.equals("-")) {
+
+                if (isInt(r[c + 1])) {
+                    rconstant = rconstant - Integer.valueOf(r[c + 1]);
+                }
+
+                if (!isInt(r[c + 1])) {
+
+                    if (r[c + 1].length() == 1) {
+                        rcoefficient--;
+                    }
+                    else {
+                        int coefficient = Integer.valueOf(r[c + 1].split("")[0]);
+                        rcoefficient = rcoefficient - coefficient;
                     }
                 }
             }
         }
-
-        System.out.println(rconstant + ", " + rcoefficient);
 
         //ax + b = ax + b
         lcoefficient = lcoefficient - rcoefficient;
         rconstant = rconstant - lconstant;
-        double solution = rconstant / lcoefficient;
 
-        System.out.println("x = " + solution);
+        try {
+            double solution = rconstant / lcoefficient;
+            System.out.println("x = " + solution);
+            return;
+        }
+        catch (Exception e) {
+            System.out.println("no solution");
+            return;
+        }
+    }
+
+    public static boolean isInt(String x) {
+        try {
+            Integer.valueOf(x);
+            return true;
+        }
+        catch (Exception e) {
+            return false;
+        }
     }
 }
