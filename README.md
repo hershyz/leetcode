@@ -1,2 +1,2 @@
 # leetcode
-Example solutions to LeetCode questions
+Example solutions to leetcode questions
