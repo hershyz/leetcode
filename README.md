@@ -39,7 +39,8 @@
   <li><a href="https://leetcode.com/problems/shortest-palindrome/">Shortest Palindrome</a></li>
   <li><a href="https://leetcode.com/problems/solve-the-equation/">Solve the Equation</a></li>
   <li><a href="https://leetcode.com/problems/super-ugly-number/">Super Ugly Number</a></li>
-  <li><a href="Triangle">Triangle</a></li>
+  <li><a href="https://github.com/hershyz/leetcode-solutions/blob/master/TrappingRainWater.java">Trapping Rain Water</a></li>
+  <li><a href="https://leetcode.com/problems/triangle/">Triangle</a></li>
   <li><a href="https://leetcode.com/problems/uncommon-words-from-two-sentences/">Uncommon Words From Two Sentences</a></li>
   <li><a href="https://leetcode.com/problems/unique-number-of-occurrences/">Unique Number of Occurances</a></li>
   <li><a href="https://leetcode.com/problems/unique-paths/">Unique Paths</a></li>
