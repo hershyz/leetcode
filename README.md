@@ -11,7 +11,7 @@
   <li><a href="https://leetcode.com/problems/create-maximum-number/">Create Maximum Number</a></li>
   <li><a href="https://leetcode.com/problems/daily-temperatures/">Daily Tempretures</a></li>
   <li><a href="https://leetcode.com/problems/decode-ways/">Decode Ways</a></li>
-  <li><a href="https://github.com/hershyz/leetcode-solutions/blob/master/ExcelSheetColumnTitle.java">Excel Sheet Column Title</a></li>
+  <li><a href="https://leetcode.com/problems/excel-sheet-column-title/">Excel Sheet Column Title</a></li>
   <li><a href="https://leetcode.com/problems/find-all-anagrams-in-a-string/">Find All Anagrams in a String</a></li>
   <li><a href="https://leetcode.com/problems/find-median-from-data-stream/">Find Median From Data Stream</a></li>
   <li><a href="https://leetcode.com/problems/find-pivot-index/">Find Pivot Index</a></li>
@@ -39,7 +39,7 @@
   <li><a href="https://leetcode.com/problems/shortest-palindrome/">Shortest Palindrome</a></li>
   <li><a href="https://leetcode.com/problems/solve-the-equation/">Solve the Equation</a></li>
   <li><a href="https://leetcode.com/problems/super-ugly-number/">Super Ugly Number</a></li>
-  <li><a href="https://github.com/hershyz/leetcode-solutions/blob/master/TrappingRainWater.java">Trapping Rain Water</a></li>
+  <li><a href="https://leetcode.com/problems/trapping-rain-water/">Trapping Rain Water</a></li>
   <li><a href="https://leetcode.com/problems/triangle/">Triangle</a></li>
   <li><a href="https://leetcode.com/problems/uncommon-words-from-two-sentences/">Uncommon Words From Two Sentences</a></li>
   <li><a href="https://leetcode.com/problems/unique-number-of-occurrences/">Unique Number of Occurances</a></li>
