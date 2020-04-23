@@ -1,4 +1,4 @@
-<h1>Leetcode Solutions</h1>
+<img src="https://raw.githubusercontent.com/hershyz/leetcode/master/logo.png"/>
 <h4>Example solutions to LeetCode questions, some better than others, along with some other algorithms.</h4>
 <br>
 <p><i>Solved in this repository:</i></p>
