@@ -47,4 +47,5 @@
   <li><a href="https://leetcode.com/problems/valid-palindrome-ii/">Valid Palindrome II</a></li>
   <li><a href="https://leetcode.com/problems/word-subsets/">Word Subsets</a></li>
   <li><a href="https://leetcode.com/problems/robot-return-to-origin/">Robot Return to Origin</a></li>
+  <li><a href="https://leetcode.com/problems/student-attendance-record-i/">Student Attendance Record I</a></li>
 </ul>
