@@ -49,4 +49,5 @@
   <li><a href="https://leetcode.com/problems/robot-return-to-origin/">Robot Return to Origin</a></li>
   <li><a href="https://leetcode.com/problems/student-attendance-record-i/">Student Attendance Record I</a></li>
   <li><a href="https://leetcode.com/problems/valid-boomerang/">Valid Boomarang</a></li>
+  <li><a href="https://leetcode.com/problems/single-number/">Single Number</a></li>
 </ul>
