@@ -51,4 +51,5 @@
   <li><a href="https://leetcode.com/problems/valid-boomerang/">Valid Boomarang</a></li>
   <li><a href="https://leetcode.com/problems/single-number/">Single Number</a></li>
   <li><a href="https://leetcode.com/problems/binary-subarrays-with-sum/">Binary Subarrays With Sum</a></li>
+  <li><a href="https://leetcode.com/problems/factorial-trailing-zeroes/">Factorial Trailing Zeros</a></li>
 </ul>
