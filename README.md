@@ -55,4 +55,5 @@
   <li><a href="https://leetcode.com/problems/intersection-of-two-arrays/">Intersection of Two Arrays</a></li>
   <li><a href="https://leetcode.com/problems/restore-ip-addresses/">Restore IP Adresses</a></li>
   <li><a href="https://leetcode.com/problems/palindrome-pairs/">Palindrome Pairs</a></li>
+  <li><a href="https://leetcode.com/problems/shuffle-an-array/">Shuffle an Array</a></li>
 </ul>
