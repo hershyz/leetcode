@@ -57,4 +57,5 @@
   <li><a href="https://leetcode.com/problems/palindrome-pairs/">Palindrome Pairs</a></li>
   <li><a href="https://leetcode.com/problems/shuffle-an-array/">Shuffle an Array</a></li>
   <li><a href="https://leetcode.com/problems/search-in-rotated-sorted-array-ii/">Search in Rotated Sorted Array II</a></li>
+  <li><a href="https://leetcode.com/problems/smallest-rotation-with-highest-score/">Smallest Rotation With Highest Score</a></li>
 </ul>
