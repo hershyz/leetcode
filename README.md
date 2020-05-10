@@ -58,4 +58,5 @@
   <li><a href="https://leetcode.com/problems/shuffle-an-array/">Shuffle an Array</a></li>
   <li><a href="https://leetcode.com/problems/search-in-rotated-sorted-array-ii/">Search in Rotated Sorted Array II</a></li>
   <li><a href="https://leetcode.com/problems/smallest-rotation-with-highest-score/">Smallest Rotation With Highest Score</a></li>
+  <li><a href="https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/">Smallest Range Covering Elements From K Lists</a></li>
 </ul>
