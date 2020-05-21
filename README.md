@@ -60,4 +60,5 @@
   <li><a href="https://leetcode.com/problems/smallest-rotation-with-highest-score/">Smallest Rotation With Highest Score</a></li>
   <li><a href="https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/">Smallest Range Covering Elements From K Lists</a></li>
   <li><a href="https://leetcode.com/problems/replace-the-substring-for-balanced-string/">Replace the Substring for Balanced String</a></li>
+  <li><a href="https://leetcode.com/problems/remove-palindromic-subsequences/">Remove Palindromic Subsequences</a></li>
 </ul>
