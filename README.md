@@ -61,5 +61,5 @@
   <li><a href="https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/">Smallest Range Covering Elements From K Lists</a></li>
   <li><a href="https://leetcode.com/problems/replace-the-substring-for-balanced-string/">Replace the Substring for Balanced String</a></li>
   <li><a href="https://leetcode.com/problems/remove-palindromic-subsequences/">Remove Palindromic Subsequences</a></li>
-  <li><a href="https://leetcode.com/problems/remove-outermost-parentheses/">Remove Outermost Parenthesis</a></li>
+  <li><a href="https://leetcode.com/problems/remove-outermost-parentheses/">Remove Outermost Parentheses</a></li>
 </ul>
