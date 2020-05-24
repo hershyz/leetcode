@@ -62,5 +62,6 @@
   <li><a href="https://leetcode.com/problems/replace-the-substring-for-balanced-string/">Replace the Substring for Balanced String</a></li>
   <li><a href="https://leetcode.com/problems/remove-palindromic-subsequences/">Remove Palindromic Subsequences</a></li>
   <li><a href="https://leetcode.com/problems/remove-outermost-parentheses/">Remove Outermost Parentheses</a></li>
-  <li><a href="https://leetcode.com/problems/subarray-product-less-than-k/">Subarray Product Less Thank K</a></li>
+  <li><a href="https://leetcode.com/problems/subarray-product-less-than-k/">Subarray Product Less Than K</a></li>
+  <li><a href="https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/">Number of Substrings Containing All Three Characters</a></li>
 </ul>
