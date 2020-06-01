@@ -65,4 +65,5 @@
   <li><a href="https://leetcode.com/problems/subarray-product-less-than-k/">Subarray Product Less Than K</a></li>
   <li><a href="https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/">Number of Substrings Containing All Three Characters</a></li>
   <li><a href="https://leetcode.com/problems/string-compression/">String Compression</a></li>
+  <li><a href="https://leetcode.com/problems/contains-duplicate-ii/">Contains Duplicate II</a></li>
 </ul>
