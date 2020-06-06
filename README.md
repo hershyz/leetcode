@@ -67,4 +67,5 @@
   <li><a href="https://leetcode.com/problems/string-compression/">String Compression</a></li>
   <li><a href="https://leetcode.com/problems/contains-duplicate-ii/">Contains Duplicate II</a></li>
   <li><a href="https://leetcode.com/problems/arithmetic-slices-ii-subsequence/">Arithmetic Slices II Subsequence</a></li>
+  <li><a href="https://leetcode.com/problems/word-frequency/">Word Frequency</a></li>
 </ul>
