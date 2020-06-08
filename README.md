@@ -71,4 +71,5 @@
   <li><a href="https://leetcode.com/problems/destination-city/">Destination City</a></li>
   <li><a href="https://leetcode.com/problems/array-partition-i/">Array Partition I</a></li>
   <li><a href="https://leetcode.com/problems/valid-parenthesis-string/">Valid Parenthesis String</a></li>
+  <li><a href="https://leetcode.com/problems/pascals-triangle/">Pascal's Triangle</a></li>
 </ul>
