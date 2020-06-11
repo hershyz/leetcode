@@ -74,4 +74,5 @@
   <li><a href="https://leetcode.com/problems/pascals-triangle/">Pascal's Triangle</a></li>
   <li><a href="https://leetcode.com/problems/ugly-number/">Ugly Number</a></li>
   <li><a href="https://leetcode.com/problems/heaters/">Heaters</a></li>
+  <li><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/">Remove Duplicates From Sorted List</a></li>
 </ul>
