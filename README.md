@@ -88,4 +88,5 @@
   <li><a href="https://leetcode.com/problems/minimum-genetic-mutation/">Minumum Genetic Mutation</a></li>
   <li><a href="https://leetcode.com/problems/odd-even-linked-list/">Odd Even Linked List</a></li>
   <li><a href="https://leetcode.com/problems/word-ladder/">Word Ladder</a></li>
+  <li><a href="https://leetcode.com/problems/h-index/">H Index</a></li>
 </ul>
