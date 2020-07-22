@@ -90,4 +90,5 @@
   <li><a href="https://leetcode.com/problems/word-ladder/">Word Ladder</a></li>
   <li><a href="https://leetcode.com/problems/h-index/">H Index</a></li>
   <li><a href="https://leetcode.com/problems/kth-largest-element-in-an-array/">Kth Largest Element In An Array</a></li>
+  <li><a href="https://leetcode.com/problems/count-the-repetitions/">Count The Repetitions</a></li>
 </ul>
