@@ -92,4 +92,5 @@
   <li><a href="https://leetcode.com/problems/kth-largest-element-in-an-array/">Kth Largest Element In An Array</a></li>
   <li><a href="https://leetcode.com/problems/count-the-repetitions/">Count The Repetitions</a></li>
   <li><a href="https://leetcode.com/problems/break-a-palindrome/">Break a Palindrome</a></li>
+  <li><a href="https://leetcode.com/problems/bulb-switcher/">Bulb Switcher</a></li>
 </ul>
