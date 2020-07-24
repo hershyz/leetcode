@@ -93,4 +93,5 @@
   <li><a href="https://leetcode.com/problems/count-the-repetitions/">Count The Repetitions</a></li>
   <li><a href="https://leetcode.com/problems/break-a-palindrome/">Break a Palindrome</a></li>
   <li><a href="https://leetcode.com/problems/bulb-switcher/">Bulb Switcher</a></li>
+  <li><a href="https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/">Element Appearing More Than 25% in Sorted Array</a></li>
 </ul>
