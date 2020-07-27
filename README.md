@@ -97,4 +97,5 @@
   <li><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">Search in Rotated Sorted Array</a></li>
   <li><a href="https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/submissions/">Cells with Odd Values in a Matrix</a></li>
   <li><a href="https://leetcode.com/problems/super-palindromes/">Super Palindromes</a></li>
+  <li><a href="https://leetcode.com/problems/repeated-substring-pattern/">Repeated Substring Pattern</a></li>
 </ul>
