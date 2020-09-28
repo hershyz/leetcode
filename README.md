@@ -101,4 +101,5 @@
   <li><a href="https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/">Find All Numbers Disappeared in an Array</a></li>
   <li><a href="https://leetcode.com/problems/shortest-unsorted-continuous-subarray/">Shortest Unsorted Continuous Subarray</a></li>
   <li><a href="https://leetcode.com/problems/duplicate-zeros/">Duplicate Zeroes</a></li>
+  <li><a href="https://leetcode.com/problems/shuffle-the-array/submissions/">Shuffle the Array</a></li>
 </ul>
