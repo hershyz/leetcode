@@ -103,4 +103,5 @@
   <li><a href="https://leetcode.com/problems/duplicate-zeros/">Duplicate Zeroes</a></li>
   <li><a href="https://leetcode.com/problems/shuffle-the-array/submissions/">Shuffle the Array</a></li>
   <li><a href="https://leetcode.com/problems/remove-covered-intervals/submissions/">Remove Covered Intervals</a></li>
+  <li><a href="https://leetcode.com/problems/optimal-division/submissions/">Optimal Division</a></li>
 </ul>
