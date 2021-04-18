@@ -35,3 +35,18 @@ public class Main {
         System.out.println(max);
     }
 }
+
+//Kadane's algorithm 0ms O(n)
+class Solution {
+    public int maxSubArray(int[] nums) {
+        
+        int max = nums[0];
+        int curr = max;
+        for (int i = 1; i < nums.length; i++) {
+            curr = Math.max(nums[i] + curr, nums[i]);
+            max = Math.max(curr, max);
+        }
+        
+        return max;
+    }
+}
