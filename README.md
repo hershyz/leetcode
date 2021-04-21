@@ -116,4 +116,5 @@
   <li><a href="https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/">Shortest Subarray To Be Removed To Make Array Sorted</a></li>
   <li><a href="https://leetcode.com/problems/rearrange-words-in-a-sentence/">Rearrange Words in a Sentence</a></li>
   <li><a href="https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/">Check if a String Contains All Binary Codes of Size K</a></li>
+  <li><a href="https://leetcode.com/problems/lemonade-change/">Lemonade Change</a></li>
 </ul>
