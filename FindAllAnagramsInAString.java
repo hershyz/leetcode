@@ -1,72 +1,69 @@
-/*
-* https://leetcode.com/problems/find-all-anagrams-in-a-string/
-* Difficulty: MEDIUM
-* */
+class Solution {
+    
+    public static List<Integer> findAnagrams(String s, String p) {
+        List<Integer> result = new ArrayList<>();
+        int l = 0;
+        int r = l + (p.length() - 1);
+        while (r < s.length()) {
+            String sub = "";
+            for (int i = l; i <= r; i++) {
+                sub += s.charAt(i);
+            }
+            if (containsAll(sub, p)) {
+                result.add(l);
+            }
+            l++;
+            r++;
+        }
 
-public class Main {
-
-    public static void main(String[] args) {
-        String S = "cbaebabacd";
-        String p = "abc";
-        run(S, p);
+        System.out.println(result);
+        return result;
     }
 
-    public static void run(String S, String p) {
+    public static boolean containsAll(String a, String b) {
 
-        String[] s = S.split("");
-        int l = p.length();
+        String mapRaw = "abcdefghijklmnopqrstuvwxyz";
+        String[] chars = mapRaw.split("");
 
-        int i;
-        for (i = 0; i < s.length; i++) {
+        HashMap<String, Integer> aFreqs = new HashMap<>();
+        HashMap<String, Integer> bFreqs = new HashMap<>();
 
-            int rightBound = i + l;
-            if (rightBound <= s.length) {
-                String currentSub = getStringFromIndexes(i, rightBound, s);
-                if (containsAnagram(currentSub, p)) {
-                    System.out.println(i);
+        for (int i = 0; i < a.length(); i++) {
+            String aChar = String.valueOf(a.charAt(i));
+            String bChar = String.valueOf(b.charAt(i));
+            if (aFreqs.containsKey(aChar)) {
+                int val = aFreqs.get(aChar) + 1;
+                aFreqs.replace(aChar, val);
+            }
+            if (bFreqs.containsKey(bChar)) {
+                int val = bFreqs.get(bChar) + 1;
+                bFreqs.replace(bChar, val);
+            }
+            if (!aFreqs.containsKey(aChar)) {
+                aFreqs.put(aChar, 1);
+            }
+            if (!bFreqs.containsKey(bChar)) {
+                bFreqs.put(bChar, 1);
+            }
+        }
+
+        for (String c : chars) {
+            if (!aFreqs.containsKey(c) && bFreqs.containsKey(c)) {
+                return false;
+            }
+            if (aFreqs.containsKey(c) && !bFreqs.containsKey(c)) {
+                return false;
+            }
+
+            if (aFreqs.containsKey(c) && bFreqs.containsKey(c)) {
+                int aVal = aFreqs.get(c);
+                int bVal = bFreqs.get(c);
+                if (aVal != bVal) {
+                    return false;
                 }
             }
         }
-    }
 
-    public static boolean containsAnagram(String S, String P) {
-
-        boolean contains = true;
-
-        String[] s = S.split("");
-        String[] p = P.split("");
-
-        int i;
-        for (i = 0; i < p.length; i++) {
-            if (!containsChar(s, p[i])) {
-                contains = false;
-            }
-        }
-
-        return contains;
-    }
-
-    public static boolean containsChar(String[] s, String c) {
-
-        int i;
-        for (i = 0; i < s.length; i++) {
-            if (s[i].equals(c)) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    public static String getStringFromIndexes(int left, int right, String[] s) {
-
-        String result = "";
-
-        int i;
-        for (i = left; i < right; i++) {
-            result = result + s[i];
-        }
-
-        return result;
+        return true;
     }
 }
